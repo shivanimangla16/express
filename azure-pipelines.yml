@@ -18,7 +18,8 @@ strategy:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '16.x'
+    versionSpec: $(node_version)
+
   displayName: 'Install Node.js'
   
 - task: CopyFiles@2
